@@ -1,0 +1,80 @@
+/*music*/
+.container{
+    width: 90%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.music-player{
+
+    float: left;
+    margin-bottom: 30px;
+}
+.music-player iframe{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.music-disc-list{
+
+    float: right;
+    background-color: white;
+    overflow: auto;
+
+}
+
+.music-disc-list .text-music-list {
+    text-align: center;
+    padding: 10px;
+
+
+}
+.music-disc-list table{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 4.4px 10px;
+}
+th, td {
+    background-color: #96D4D4;
+
+}
+
+.container .col-half{
+    float: left;
+}
+.container #contact .section-heading {
+    margin: 30px 0;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.container .content-section .section-heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.container .text-description-contact i{
+    padding: 10px;
+}
+.container .text-description-contact{
+    background-color: #cccccc;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+
+

@@ -1,0 +1,532 @@
+/* Reset css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*common*/
+html{
+    scroll-behavior: smooth;
+}
+
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.col{
+    float: left;
+    padding-right: 9px;
+    padding-left: 8px;
+}
+.col-third{
+    width: 33.3333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #fbfafb, #eeecef, #e0dfe3, #d2d2d7, #c3c5cc, #acb0b7, #969ca2, #81888e, #61686c, #444a4c, #292d2e, #0f1313);
+    height: auto;
+}
+
+
+#header {
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: inline;
+    width: 100%;
+}
+
+#header .he-logo {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav, .sub_nav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: block;
+
+}
+#nav li:hover{
+
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 18px;
+    text-transform: uppercase;
+}
+
+#nav li:hover .sub_nav {
+    display: block;
+}
+
+#nav li a > i {
+    margin-left: 5px;
+
+}
+
+#nav li:hover a {
+    color: black;
+    background-color: white;
+}
+
+
+#nav > li:hover > a {
+    color: black;
+    background-color: white;
+    display: block;
+}
+#nav .sub_nav li:hover {
+    display: block;
+}
+
+#nav .sub_nav {
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+#nav .sub_nav :hover {
+    color: black;
+}
+#nav .sub_nav > li:hover > a {
+
+}
+
+#nav .sub_nav > li :hover{
+    background-color: #6c757d;
+    display: block;
+}
+/*nav-mobile*/
+.nav__mobile{
+    top:0;
+    margin-top: 60px;
+    left:0;
+    bottom: 0;
+    background-color: #323539;
+    position: fixed;
+    max-width: 100%;
+    width: 250px;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.nav__mobile .sub_nav > li {
+    display: block;
+}
+
+.nav__mobile  li:last-child {
+    position: relative;
+}
+
+
+.nav__mobile li a {
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.nav__mobile .sub_nav >li>a{
+    color: white;
+}
+
+.nav__mobile li:hover .sub_nav {
+    display: block;
+    width: 100%;
+}
+
+.nav__mobile li a > i {
+    margin-left: 5px;
+
+}
+
+.nav__mobile li:hover a{
+    color: black;
+}
+.nav__mobile .sub_nav li:hover a{
+    color: white;
+}
+.nav-bar-btn{
+    float: left;
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-top: 18px;
+    margin-left: 20px;
+
+}
+.nav__mobile-btn{
+    float: left;
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 210px;
+}
+
+.nav__mobile-btn li:first-child{
+    padding: 20px;
+}
+.nav__mobile .sub_nav {
+    display: none;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav__mobile .sub_nav a {
+    color: silver;
+}
+
+.nav__input:checked ~ .nav__mobile{
+    transform: translateX(0);
+}
+.search:checked ~ .input__search{
+    display: block;
+    transform: translateX(-10%);
+
+}
+.heading-search{
+    width: 10%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.input__search{
+    float: left;
+    padding: 2%;
+    margin-left: -150px;
+    margin-top: 15px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    display: none;
+}
+.search{
+    display: none;
+}
+.search{
+    display: none;
+}
+.heading-search .search-icon{
+    float: right;
+    color: white;
+    line-height: 30px;
+}
+.heading-search i{
+    cursor: pointer;
+}
+
+.heading-search .search-btn i{
+    padding-top:13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+
+}
+
+
+
+.heading-search .search-icon:hover{
+    color: white;
+}
+
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+
+}
+.nav__input{
+    display: none;
+
+}
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    margin-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.slideshow-container img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+
+/* Định dạng nội dung Caption */
+.slider-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #565e64;
+    opacity: 0.9;
+    width: 100%;
+    height: 60px;
+
+}
+
+.slider-footer p {
+    float: left;
+    max-width: 60%;
+    color: white;
+    margin-left: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px;
+    line-height: 60px;
+}
+
+.button-slider {
+    float: right;
+    max-width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px;
+    line-height: 60px;
+}
+.button-slider a{
+    padding: 22px 22px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+.button-slider:hover {
+    opacity: 0.5;
+}
+
+
+
+
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+#content{
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+
+}
+
+
+
+.section-heading  {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 40px 0;
+
+}
+.text-description{
+    background-color: #cccccc;
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px;
+}
+.text-description img {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 0 10px;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+
+}
+.text-description p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    padding: 2px;
+    text-align: justify;
+    line-height: 2.0;
+    font-family:  inherit;
+
+}
+/*Social*/
+.member-list{
+
+
+}
+.col-third{
+    float: left;
+
+}
+.member-img{
+    width: 100%;
+    height: 80%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.member-content{
+    background-color: white;
+    padding:16px;
+    font-size: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.member-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.member-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.list-btn-social{
+    margin-top: 15px;
+}
+.list-btn-social i{
+    font-size: 20px;
+    padding-right: 15px;
+}
+.list-btn-social i:hover{
+    opacity: 0.5;
+}
+.list-btn-social img{
+    padding-right: 10px;
+    width: 30px;
+    height: 15px;
+
+}
+/*contact*/
+#content .text-description-contact i{
+    padding: 10px;
+}
+#content .text-description-contact{
+    background-color: #cccccc;
+    border-radius: 12px;
+    padding: 30px;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+.contact-form .form-submit-btn{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 16px;
+    float: right;
+    -webkit-appearance: none;
+}
+#contact p a{
+    color: black;
+}
+.clear{
+    clear: both;
+}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .list-btn-social a{
+    text-decoration: none;
+    height: 100px;
+    color: rgba(150,150,150,150);
+}
+#footer p{
+    padding: 15px;
+    color: rgba(  200,200,200,200);;
+}
+#footer p a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
