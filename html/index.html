@@ -59,18 +59,61 @@
 </div>
 <!--/herder-->
 <label for="nav__input" class="common">
-    <!--slider-->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="../image/sky_tour.jpg" alt="hinh_anh_am_nhac">
-        </div>
 
-        <div class="mySlides fade">
-            <img src="../image/chung_ta_cua_hien_tai.jpg" alt="hinh_anh_am_nhac">
-        </div>
+    <div class="slider-on__mobile">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="col col-third">
+                    <img src="../image/song_co_chac_yeu_la_day.png" alt="popular_song" class="member-img">
+                    <div class="member-content">
+                        <h3 class="member-heading">Co chac yeu la day</h3>
+                        <div class="member-time">Released of year:2020</div>
+                        <div class="member-time">Length: 3:22</div>
+                        <div class="list-btn-social">
+                            <a href="https://www.youtube.com/watch?v=6t-MjBazs3o"><i class="fab fa-youtube"
+                                                                                     style="color: red"></i></a>
+                            <a href="https://open.spotify.com/album/738A5dZVHTynH0sfeL87KV"><i class="fab fa-spotify"
+                                                                                               style="color: green"></i></a>
+                            <a href="https://www.deezer.com/en/track/1007857522"><i class="fab fa-deezer"
+                                                                                    style="color: rosybrown"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="mySlides fade">
-            <img src="../image/there_no_one_at_all.jpg" alt="hinh_anh_am_nhac">
+            <div class="mySlides fade">
+                <div class="col col-third">
+                    <img src="../image/other_act_comic.png" alt="other_product" class="member-img">
+                    <div class="member-content">
+                        <h3 class="member-heading">Lac Troi</h3>
+                        <div class="member-time">Released of year: 2021</div>
+                        <div class="member-time">Category: Cartoon/ Comic</div>
+                        <div class="list-btn-social">
+                            <a href="https://www.youtube.com/watch?v=aDZqqDTqhaA"><i class="fab fa-youtube"
+                                                                                     style="color: red"></i></a>
+                            <a href="https://pops.vn/comics/lac-troi-5fed8b5558a9ae4b5c2df89e3"><img
+                                    src="../image/other_social_pop.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="col col-third">
+                    <img src="../image/other_act_film.png" alt="other_product" class="member-img">
+                    <div class="member-content">
+                        <h3 class="member-heading">Sky Tour</h3>
+                        <div class="member-time">Released of year: 2020</div>
+                        <div class="member-time">Category: Film</div>
+                        <div class="list-btn-social">
+                            <a href="https://www.youtube.com/watch?v=ol6trghy_QA"><i class="fab fa-youtube"
+                                                                                     style="color: red"></i></a>
+                            <a href="https://www.netflix.com/vn/title/81318380"><img
+                                    src="../image/other_social_netflix.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <br>
@@ -81,7 +124,21 @@
         <span class="dot" onclick="currentSlide(2)"></span>
     </div>
     <!--/slider-->
+    <div class="slider-on__pc__tablet">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../image/sky_tour.jpg" alt="hinh_anh_am_nhac">
+            </div>
 
+            <div class="mySlides fade">
+                <img src="../image/chung_ta_cua_hien_tai.jpg" alt="hinh_anh_am_nhac">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../image/there_no_one_at_all.jpg" alt="hinh_anh_am_nhac">
+            </div>
+        </div>
+    </div>
     <!--content-->
     <div id="content">
         <!--    begin information-->
@@ -103,7 +160,7 @@
         <!--        end information-->
 
         <!--        begin popular song-->
-        <div class="content-section">
+        <div class="content-section product">
             <h2 class="section-heading">POPULAR SONGS</h2>
             <div class="row member-list">
                 <div class="col col-third zoom_item">
@@ -157,11 +214,11 @@
             </div>
 
         </div>
-
+        <div class="clear"></div>
         <!--        end popular song-->
 
         <!--        begin other activities-->
-        <div class="content-section">
+        <div class="content-section product">
             <h2 class="section-heading">OTHER PRODUCTS</h2>
             <div class="row member-list">
                 <div class="col col-third zoom_item">
@@ -210,6 +267,7 @@
             </div>
 
         </div>
+        <div class="clear"></div>
         <!--        end other activities-->
 
 
@@ -289,7 +347,7 @@
             slideIndex = 0
         }
         //tự động chuyển đổi slide sau 5s
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 10000);
     }
 
     //mặc định hiển thị slide đầu tiên

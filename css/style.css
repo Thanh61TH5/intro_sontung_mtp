@@ -301,6 +301,11 @@ body {
 }
 
 /* Định dạng nội dung Caption */
+.slider-on__mobile
+{display: none}
+.slider-on__pc__tablet{
+    display: block;
+}
 .slider-footer {
     position: absolute;
     bottom: 0;

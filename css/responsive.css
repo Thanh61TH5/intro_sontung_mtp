@@ -39,6 +39,19 @@
     .section-heading{
         font-size: 20px;
     }
+    .slider-on__mobile{
+        margin-top: -50px;
+        display: block;
+        padding: 30px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .slider-on__pc__tablet{
+        display: none;
+    }
+    .product{
+        display: none;
+    }
     #contact .col-half{
         width: 100%;
     }
@@ -72,6 +85,7 @@
 
     #contact .text-description-contact p{
         margin-bottom: 10px;
+        margin-top: 30px;
     }
     #footer p{
         padding: 20px;
