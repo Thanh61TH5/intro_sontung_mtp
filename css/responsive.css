@@ -10,7 +10,6 @@
         display: none;
     }
 
-
     .nav-bar-btn{
         display: block;
     }
@@ -37,6 +36,9 @@
         width: 100%;
         margin-top: 30px;
     }
+    .section-heading{
+        font-size: 20px;
+    }
     #contact .col-half{
         width: 100%;
     }
@@ -57,6 +59,15 @@
         height: 30px;
         border-radius: 5px;
 
+    }
+    .section-heading{
+        display: none;
+    }
+    .info{
+        display: none;
+    }
+    .content-section-contact .section-heading{
+        display: block;
     }
 
     #contact .text-description-contact p{

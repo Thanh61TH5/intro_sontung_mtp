@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/image/favicon.png"/>
     <title>SonTung-MTP</title>
 </head>
@@ -19,14 +22,19 @@
         </div>
         <!--/logo-->
         <ul id="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="../html/music.html">Music</a></li>
-            <li><a href="../html/award.html">Award</a></li>
-            <li><a href="../html/company.html">Company</a></li>
-            <li><a href="../html/fandom.html">Fandom</a></li>
-            <li><a href="">Share</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="zoom_item"><a href="index.html">Home</a></li>
+            <li class="zoom_item"><a href="../html/music.html">Music</a></li>
+            <li class="zoom_item"><a href="../html/award.html">Award</a></li>
+            <li class="zoom_item"><a href="../html/company.html">Company</a></li>
+            <li class="zoom_item"><a href="../html/fandom.html">Fandom</a></li>
+            <li class="zoom_item"><a href="">Share</a></li>
+            <li class="zoom_item"><a href="#contact">Contact</a></li>
         </ul>
+        <div class="header-list-social">
+            <a href="https://www.instagram.com/sontungmtp/?hl=vi"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/sontungmtp777/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/mtpyps.tungbinh/?locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+        </div>
         <!--        mobile-menu-->
         <label for="nav__input" class="nav-bar-btn">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
@@ -78,7 +86,7 @@
     <div id="content">
         <!--    begin information-->
 
-        <div class="content-section">
+        <div class="content-section info ">
             <h2 class="section-heading">INFORMATION</h2>
             <div class="text-description">
                 <img src="../image/avata_mtp.jpg">
@@ -98,7 +106,7 @@
         <div class="content-section">
             <h2 class="section-heading">POPULAR SONGS</h2>
             <div class="row member-list">
-                <div class="col col-third">
+                <div class="col col-third zoom_item">
                     <img src="../image/song_lac_troi.png" alt="popular_song" class="member-img">
                     <div class="member-content">
                         <h3 class="member-heading">Lac troi</h3>
@@ -114,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-third">
+                <div class="col col-third zoom_item">
                     <img src="../image/song_co_chac_yeu_la_day.png" alt="popular_song" class="member-img">
                     <div class="member-content">
                         <h3 class="member-heading">Co chac yeu la day</h3>
@@ -130,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-third">
+                <div class="col col-third zoom_item">
                     <img src="../image/song_haytraochoanh.png" alt="popular_song" class="member-img">
                     <div class="member-content">
                         <h3 class="member-heading">Hay trao cho anh</h3>
@@ -156,7 +164,7 @@
         <div class="content-section">
             <h2 class="section-heading">OTHER PRODUCTS</h2>
             <div class="row member-list">
-                <div class="col col-third">
+                <div class="col col-third zoom_item">
                     <img src="../image/other_act_book.png" alt="other_product" class="member-img">
                     <div class="member-content">
                         <h3 class="member-heading">Cham Toi Giac Mo</h3>
@@ -170,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-third">
+                <div class="col col-third zoom_item">
                     <img src="../image/other_act_comic.png" alt="other_product" class="member-img">
                     <div class="member-content">
                         <h3 class="member-heading">Lac Troi</h3>
@@ -184,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-third">
+                <div class="col col-third zoom_item">
                     <img src="../image/other_act_film.png" alt="other_product" class="member-img">
                     <div class="member-content">
                         <h3 class="member-heading">Sky Tour</h3>

@@ -11,7 +11,6 @@
 .music-player{
 
     float: left;
-    margin-bottom: 30px;
 }
 .music-player iframe{
     display: flex;
@@ -60,8 +59,6 @@ th, td {
     font-size: 30px;
 }
 .container .content-section .section-heading {
-    margin-top: 30px;
-    margin-bottom: 20px;
     text-align: center;
     letter-spacing: 4px;
     font-weight: 500;
