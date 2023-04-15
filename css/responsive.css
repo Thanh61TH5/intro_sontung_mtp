@@ -40,12 +40,21 @@
         font-size: 20px;
     }
     .slider-on__mobile{
-        margin-top: -50px;
+
         display: block;
-        padding: 30px;
+        padding: 0 30px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
+        margin-top: -58px;
     }
+    .title__mobile{
+        margin-top: 92px;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
     .slider-on__pc__tablet{
         display: none;
     }
@@ -91,6 +100,9 @@
         padding: 20px;
 
     }
+    .music-disc-list{
+        display: none;
+    }
 
 }
 /*tablet*/
@@ -133,6 +145,12 @@
         width: 30px;
         height: 15px;
 
+    }
+    .music-disc-list{
+        display: none;
+    }
+    #share .col-third{
+        width: 50%;
     }
     #footer p{
         padding: 20px;
