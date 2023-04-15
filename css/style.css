@@ -46,7 +46,7 @@ html {
 }
 
 body {
-    height: auto;
+    height: 100%;
     background-image: linear-gradient(to bottom, #434343 60%, black 100%);
     display: flex;
     justify-content: center;
@@ -512,10 +512,24 @@ body {
     border: 1px solid black;
     padding: 10px 16px;
     float: right;
+    border-radius: 5px;
     -webkit-appearance: none;
 }
 #contact p a{
     color: black;
+}
+
+.contact{
+    margin-top: 100px;
+
+
+}
+.contact .section-heading{
+    padding: 20px;
+}
+.contact .col{
+    margin-bottom: 10px;
+    border-radius: 2px; ;
 }
 #notify_box{
     min-height: 100px;
