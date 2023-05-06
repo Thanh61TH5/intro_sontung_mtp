@@ -59,6 +59,10 @@
     .slider-on__pc__tablet{
         display: none;
     }
+    .text-description p {
+        text-align: left;
+    }
+    }
     .product{
         display: none;
     }
@@ -116,7 +120,7 @@
         display: none;
     }
 
-}
+
 /*tablet*/
 @media (min-width: 740px) and (max-width: 1050px) {
     #content{
