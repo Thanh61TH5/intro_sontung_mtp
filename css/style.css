@@ -55,6 +55,44 @@ body {
 }
 
 
+#audio{
+    max-width: 500px;
+    height: auto;
+    background-color: white;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+#audio p{
+    text-align: center;
+    padding: 20px;
+}
+#audio .box-button-play__music{
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+}
+#audio .box-button-play__music .button_play{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,33,41,1) 51%, rgba(2,19,23,1) 100%);
+    min-width: 100px;
+    padding: 5px 3px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#audio .box-button-play__music .button_play:hover{
+    opacity: 0.8;
+}
 #header {
     height: 60px;
     background-color: black;
@@ -127,9 +165,10 @@ body {
 
 /*nav-mobile*/
 .nav__mobile{
-    top:0;
+
     margin-top: 60px;
     left:0;
+    top: 0;
     bottom: 0;
     background-color: #323539;
     position: fixed;
@@ -428,7 +467,7 @@ body {
     padding: 2px;
     text-align: justify;
     line-height: 2.0;
-    font-family:  inherit;
+    font-family:  sans-serif;
 
 }
 /*Social*/
@@ -443,7 +482,7 @@ body {
 }
 .member-img{
     width: 100%;
-    height: 80%;
+    min-height: 480px;
     display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -595,4 +634,48 @@ body {
     color: white;
     padding: 10px;
 }
+#play-new__song{
+    display: none;
+}
+.play-new__song{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    bottom: 0;
 
+    height: 80px;
+    z-index: 5;
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+
+}
+.play-new__song .play-new__song-icon{
+display: none;
+}
+
+.play-new__song i{
+    padding: 15px 20px;
+
+}
+.play-new__song p{
+    padding: 15px 10px;
+    color: white;
+}
+.play-new__song button{
+    border: none;
+    border-radius: 50%;
+    background-color: dimgray;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}

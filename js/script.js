@@ -53,3 +53,43 @@ submitBtn.addEventListener('click', (e) => {
         form.reportValidity();
     }
 });
+function pauseAudio() {
+    var box_notify = document.getElementById('audio');
+    box_notify.style.display = "none";
+}
+
+function playAudio() {
+    var audio = document.getElementById("my_audio");
+    var box_notify = document.getElementById('audio');
+    var play_new_song = document.getElementById('play-new__song');
+    box_notify.style.display = "none";
+    play_new_song.style.display = "block";
+    audio.play();
+}
+function show_icon_play(){
+    var audio = document.getElementById("my_audio");
+    var play = document.querySelector('.play-new__song-icon');
+    var pause = document.querySelector('.pause-new__song-icon');
+    play.style.display= "block";
+    pause.style.display= "none";
+    audio.pause();
+}
+function show_icon_pause(){
+    var audio = document.getElementById("my_audio");
+    var play = document.querySelector('.play-new__song-icon');
+    var pause = document.querySelector('.pause-new__song-icon');
+    pause.style.display= "block";
+    play.style.display= "none";
+    audio.play();
+}
+
+const overlay = document.querySelector('.overlay');
+const button_yes = document.querySelector('.button_play_yes');
+const button_no = document.querySelector('.button_play_no');
+button_yes.addEventListener('click', () => {
+    overlay.style.display = 'none';
+});
+button_no.addEventListener('click', () => {
+    overlay.style.display = 'none';
+});
+
