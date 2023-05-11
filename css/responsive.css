@@ -10,6 +10,9 @@
     .he-logo{
         display: none;
     }
+    .header-list-social{
+        display: block;
+    }
 
     .nav-bar-btn{
         display: block;
@@ -59,7 +62,7 @@
         font-size: 20px;
     }
 
-    .slider-on__pc__tablet{
+    .slide-PC{
         display: none;
     }
     .product{
@@ -151,6 +154,9 @@
         border-radius: 5px;
 
     }
+    .header-list-social{
+        display: block;
+    }
     .list-btn-social i{
         font-size: 22px;
         padding: 15px;
@@ -230,6 +236,9 @@
     .list-btn-social i{
         font-size: 22px;
         padding: 15px;
+    }
+    .header-list-social{
+        display: block;
     }
 
 }
